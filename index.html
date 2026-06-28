@@ -1,0 +1,1021 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Happy Birthday Pookiedon ❤️</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
+body{
+
+background:#050505;
+font-family:Poppins,sans-serif;
+overflow-x:hidden;
+color:white;
+
+}
+
+body::before{
+
+content:"";
+position:fixed;
+inset:0;
+
+background:
+
+radial-gradient(circle at 20% 20%,rgba(255,215,0,.18),transparent 35%),
+
+radial-gradient(circle at 80% 40%,rgba(255,0,120,.15),transparent 30%),
+
+radial-gradient(circle at 50% 100%,rgba(255,255,255,.05),transparent 40%);
+
+filter:blur(70px);
+
+animation:bgmove 12s infinite alternate;
+
+z-index:-2;
+
+}
+
+@keyframes bgmove{
+
+0%{
+
+transform:translateY(-40px);
+
+}
+
+100%{
+
+transform:translateY(50px);
+
+}
+
+}
+
+.loader{
+
+position:fixed;
+
+width:100%;
+
+height:100vh;
+
+background:#000;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+flex-direction:column;
+
+z-index:99999;
+
+transition:1s;
+
+}
+
+.loader h1{
+
+font-size:55px;
+
+color:#FFD700;
+
+letter-spacing:5px;
+
+animation:pulse 2s infinite;
+
+}
+
+.loader p{
+
+margin-top:15px;
+
+color:white;
+
+letter-spacing:3px;
+
+}
+
+@keyframes pulse{
+
+50%{
+
+transform:scale(1.08);
+
+text-shadow:0 0 35px gold;
+
+}
+
+}
+
+.hero{
+
+min-height:100vh;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+flex-direction:column;
+
+text-align:center;
+
+padding:30px;
+
+}
+
+.hero h2{
+
+font-size:22px;
+
+color:#ffd700;
+
+letter-spacing:4px;
+
+margin-bottom:20px;
+
+}
+
+.hero h1{
+
+font-size:70px;
+
+font-family:Cinzel;
+
+margin-bottom:20px;
+
+background:linear-gradient(90deg,#fff,#FFD700,#fff);
+
+-webkit-background-clip:text;
+
+-webkit-text-fill-color:transparent;
+
+animation:shine 5s linear infinite;
+
+}
+
+@keyframes shine{
+
+0%{
+
+background-position:-400px;
+
+}
+
+100%{
+
+background-position:400px;
+
+}
+
+}
+
+.hero p{
+
+max-width:700px;
+
+line-height:2;
+
+font-size:18px;
+
+opacity:.9;
+
+}
+
+.hero button{
+
+margin-top:45px;
+
+padding:16px 45px;
+
+background:linear-gradient(45deg,#FFD700,#ff7b00);
+
+border:none;
+
+border-radius:50px;
+
+font-size:18px;
+
+cursor:pointer;
+
+font-weight:700;
+
+transition:.4s;
+
+}
+
+.hero button:hover{
+
+transform:scale(1.08);
+
+box-shadow:0 0 35px gold;
+
+}
+
+.photo{
+
+margin-top:70px;
+
+width:320px;
+
+height:420px;
+
+border-radius:30px;
+
+overflow:hidden;
+
+border:3px solid rgba(255,215,0,.5);
+
+box-shadow:0 0 40px rgba(255,215,0,.4);
+
+backdrop-filter:blur(15px);
+
+}
+
+.photo img{
+
+width:100%;
+
+height:100%;
+
+object-fit:cover;
+
+}
+
+.section{
+
+padding:120px 8%;
+
+}
+
+.title{
+
+font-size:45px;
+
+font-family:Cinzel;
+
+text-align:center;
+
+margin-bottom:60px;
+
+color:#FFD700;
+
+}
+  .gallery{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+
+gap:30px;
+
+margin-top:60px;
+
+}
+
+.card{
+
+position:relative;
+
+height:360px;
+
+border-radius:25px;
+
+overflow:hidden;
+
+background:rgba(255,255,255,.05);
+
+backdrop-filter:blur(18px);
+
+border:1px solid rgba(255,255,255,.08);
+
+transition:.6s;
+
+box-shadow:0 20px 60px rgba(0,0,0,.35);
+
+}
+
+.card:hover{
+
+transform:translateY(-15px) scale(1.03);
+
+box-shadow:0 25px 80px rgba(255,215,0,.35);
+
+border-color:#FFD700;
+
+}
+
+.card img{
+
+width:100%;
+
+height:100%;
+
+object-fit:cover;
+
+transition:1s;
+
+}
+
+.card:hover img{
+
+transform:scale(1.08);
+
+}
+
+.card::after{
+
+content:"❤";
+
+position:absolute;
+
+right:18px;
+
+top:18px;
+
+width:45px;
+
+height:45px;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+background:rgba(255,215,0,.15);
+
+backdrop-filter:blur(10px);
+
+border-radius:50%;
+
+font-size:22px;
+
+color:#FFD700;
+
+}
+
+.countdown{
+
+display:flex;
+
+justify-content:center;
+
+flex-wrap:wrap;
+
+gap:25px;
+
+margin-top:60px;
+
+}
+
+.box{
+
+width:140px;
+
+height:140px;
+
+background:rgba(255,255,255,.05);
+
+border:1px solid rgba(255,215,0,.2);
+
+backdrop-filter:blur(20px);
+
+border-radius:25px;
+
+display:flex;
+
+flex-direction:column;
+
+justify-content:center;
+
+align-items:center;
+
+transition:.5s;
+
+}
+
+.box:hover{
+
+transform:translateY(-10px);
+
+box-shadow:0 0 40px rgba(255,215,0,.35);
+
+}
+
+.box h2{
+
+font-size:48px;
+
+color:#FFD700;
+
+}
+
+.box span{
+
+margin-top:10px;
+
+letter-spacing:2px;
+
+font-size:15px;
+
+}
+
+.message{
+
+max-width:900px;
+
+margin:auto;
+
+padding:45px;
+
+line-height:2.2;
+
+background:rgba(255,255,255,.05);
+
+border-radius:30px;
+
+backdrop-filter:blur(20px);
+
+border:1px solid rgba(255,215,0,.15);
+
+box-shadow:0 15px 50px rgba(0,0,0,.35);
+
+font-size:18px;
+
+}
+
+.timeline{
+
+position:relative;
+
+margin-top:70px;
+
+}
+
+.timeline::before{
+
+content:"";
+
+position:absolute;
+
+left:50%;
+
+top:0;
+
+bottom:0;
+
+width:4px;
+
+background:#FFD700;
+
+}
+
+.item{
+
+width:45%;
+
+padding:25px;
+
+margin-bottom:50px;
+
+background:rgba(255,255,255,.05);
+
+border-radius:25px;
+
+backdrop-filter:blur(18px);
+
+border:1px solid rgba(255,215,0,.15);
+
+}
+
+.item:nth-child(odd){
+
+margin-right:auto;
+
+}
+
+.item:nth-child(even){
+
+margin-left:auto;
+
+}
+
+.item h3{
+
+color:#FFD700;
+
+margin-bottom:12px;
+
+font-size:24px;
+
+}
+
+.hearts{
+
+position:fixed;
+
+top:0;
+
+left:0;
+
+width:100%;
+
+height:100%;
+
+pointer-events:none;
+
+overflow:hidden;
+
+z-index:-1;
+
+}
+
+.hearts span{
+
+position:absolute;
+
+bottom:-50px;
+
+font-size:22px;
+
+animation:float 12s linear infinite;
+
+opacity:.8;
+
+}
+
+@keyframes float{
+
+0%{
+
+transform:translateY(0) rotate(0deg);
+
+opacity:0;
+
+}
+
+20%{
+
+opacity:1;
+
+}
+
+100%{
+
+transform:translateY(-120vh) rotate(360deg);
+
+opacity:0;
+
+}
+
+}
+
+.footer{
+
+padding:120px 30px;
+
+text-align:center;
+
+}
+
+.footer h1{
+
+font-size:55px;
+
+font-family:Cinzel;
+
+background:linear-gradient(90deg,#fff,#FFD700,#fff);
+
+-webkit-background-clip:text;
+
+-webkit-text-fill-color:transparent;
+
+margin-bottom:20px;
+
+}
+
+.footer p{
+
+opacity:.8;
+
+font-size:18px;
+
+}
+
+@media(max-width:900px){
+
+.hero h1{
+
+font-size:46px;
+
+}
+
+.photo{
+
+width:280px;
+
+height:360px;
+
+}
+
+.timeline::before{
+
+display:none;
+
+}
+
+.item{
+
+width:100%;
+
+margin:auto auto 30px;
+
+}
+
+.box{
+
+width:110px;
+
+height:110px;
+
+}
+
+.box h2{
+
+font-size:36px;
+
+}
+
+}
+</style>
+</head>
+
+<body>
+
+<div class="loader" id="loader">
+    <h1>❤️ Pookiedon ❤️</h1>
+    <p>Loading your birthday surprise...</p>
+</div>
+
+<div class="hearts" id="hearts"></div>
+
+<section class="hero">
+
+    <h2>HAPPY BIRTHDAY</h2>
+
+    <h1>POOKIEDON ❤️</h1>
+
+    <p>
+        Today is not just another day...
+        Today the world celebrates the most beautiful soul.
+        Thank you for bringing happiness, smiles and love into my life.
+    </p>
+
+    <button onclick="document.getElementById('gallery').scrollIntoView({behavior:'smooth'})">
+        Open Surprise 🎁
+    </button>
+
+    <div class="photo">
+        <!-- Replace with your cover image -->
+        <img src="photos/cover.jpg" alt="">
+    </div>
+
+</section>
+
+
+<section class="section">
+
+<div class="title">
+Birthday Countdown 🎂
+</div>
+
+<div class="countdown">
+
+<div class="box">
+<h2 id="days">00</h2>
+<span>DAYS</span>
+</div>
+
+<div class="box">
+<h2 id="hours">00</h2>
+<span>HOURS</span>
+</div>
+
+<div class="box">
+<h2 id="minutes">00</h2>
+<span>MINUTES</span>
+</div>
+
+<div class="box">
+<h2 id="seconds">00</h2>
+<span>SECONDS</span>
+</div>
+
+</div>
+
+</section>
+
+
+
+<section class="section" id="gallery">
+
+<div class="title">
+Our Beautiful Memories 📸
+</div>
+
+<div class="gallery">
+
+<div class="card">
+<img src="photos/1.jpg">
+</div>
+
+<div class="card">
+<img src="photos/2.jpg">
+</div>
+
+<div class="card">
+<img src="photos/3.jpg">
+</div>
+
+<div class="card">
+<img src="photos/4.jpg">
+</div>
+
+<div class="card">
+<img src="photos/5.jpg">
+</div>
+
+<div class="card">
+<img src="photos/6.jpg">
+</div>
+
+<div class="card">
+<img src="photos/7.jpg">
+</div>
+
+<div class="card">
+<img src="photos/8.jpg">
+</div>
+
+</div>
+
+</section>
+
+
+<section class="section">
+
+<div class="title">
+A Letter For You ❤️
+</div>
+
+<div class="message">
+
+Happy Birthday My Pookiedon ❤️
+
+Every smile of yours makes my day brighter.
+
+Thank you for being the most beautiful part of my life.
+
+I don't know what tomorrow brings...
+
+But I promise...
+
+Whenever life becomes difficult...
+
+I'll always stand beside you.
+
+May this birthday bring endless happiness,
+good health,
+lots of success
+and countless beautiful memories.
+
+I Love You Forever ❤️
+
+</div>
+
+</section>
+
+
+
+<section class="section">
+
+<div class="title">
+Our Journey 🌹
+</div>
+
+<div class="timeline">
+
+<div class="item">
+
+<h3>💕 First Conversation</h3>
+
+<p>
+The day everything started...
+and life became more beautiful.
+</p>
+
+</div>
+
+<div class="item">
+
+<h3>🌸 Best Memories</h3>
+
+<p>
+Every moment with you is my favourite memory.
+</p>
+
+</div>
+
+<div class="item">
+
+<h3>❤️ Today</h3>
+
+<p>
+Celebrating the birthday of the most special person.
+</p>
+
+</div>
+
+<div class="item">
+
+<h3>∞ Forever</h3>
+
+<p>
+No matter what happens...
+You'll always be special.
+</p>
+
+</div>
+
+</div>
+
+</section>
+<section class="footer">
+
+<h1>Happy Birthday ❤️</h1>
+
+<p>
+No matter where life takes us...
+You'll always have a special place in my heart.
+</p>
+
+<br><br>
+
+<button id="musicBtn">
+🎵 Play Music
+</button>
+
+</section>
+
+<audio id="music" loop>
+<source src="music/song.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+
+// Loader
+
+window.onload=()=>{
+
+setTimeout(()=>{
+
+document.getElementById("loader").style.opacity="0";
+
+setTimeout(()=>{
+
+document.getElementById("loader").style.display="none";
+
+},1000);
+
+},2500);
+
+};
+
+
+// Countdown
+
+const birthday=new Date("July 28, 2026 00:00:00").getTime();
+
+setInterval(()=>{
+
+const now=new Date().getTime();
+
+const distance=birthday-now;
+
+document.getElementById("days").innerHTML=Math.floor(distance/(1000*60*60*24));
+
+document.getElementById("hours").innerHTML=Math.floor((distance%(1000*60*60*24))/(1000*60*60));
+
+document.getElementById("minutes").innerHTML=Math.floor((distance%(1000*60*60))/(1000*60));
+
+document.getElementById("seconds").innerHTML=Math.floor((distance%(1000*60))/1000);
+
+},1000);
+
+
+// Floating Hearts
+
+const hearts=document.getElementById("hearts");
+
+function createHeart(){
+
+const h=document.createElement("span");
+
+h.innerHTML="❤️";
+
+h.style.left=Math.random()*100+"%";
+
+h.style.fontSize=(20+Math.random()*20)+"px";
+
+h.style.animationDuration=(8+Math.random()*8)+"s";
+
+hearts.appendChild(h);
+
+setTimeout(()=>{
+
+h.remove();
+
+},15000);
+
+}
+
+setInterval(createHeart,350);
+
+
+// Music
+
+const music=document.getElementById("music");
+
+document.getElementById("musicBtn").onclick=()=>{
+
+if(music.paused){
+
+music.play();
+
+document.getElementById("musicBtn").innerHTML="⏸ Pause Music";
+
+}else{
+
+music.pause();
+
+document.getElementById("musicBtn").innerHTML="🎵 Play Music";
+
+}
+
+};
+
+
+// Reveal Animation
+
+const observer=new IntersectionObserver(entries=>{
+
+entries.forEach(entry=>{
+
+if(entry.isIntersecting){
+
+entry.target.style.opacity="1";
+
+entry.target.style.transform="translateY(0px)";
+
+}
+
+});
+
+});
+
+document.querySelectorAll(".card,.item,.message,.box").forEach(el=>{
+
+el.style.opacity="0";
+
+el.style.transform="translateY(80px)";
+
+el.style.transition="1s";
+
+observer.observe(el);
+
+});
+
+</script>
+
+</body>
+</html>
